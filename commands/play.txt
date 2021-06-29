@@ -1,0 +1,13 @@
+POST /MediaRenderer/AVTransport/Control HTTP/1.1
+CONNECTION: close
+ACCEPT-ENCODING: gzip
+HOST: {ip}:1400
+USER-AGENT: Linux UPnP/1.0 Sonos/62.1-86220 (WDCR:Microsoft Windows NT 10.0.19042)
+X-Sonos-Api-Key: ffffffff-ffff-ffff-ffff-ffffffffffff
+X-Sonos-Corr-Id: ffffffff-ffff-ffff-ffff-ffffffffffff
+CONTENT-LENGTH: 266
+CONTENT-TYPE: text/xml; charset="utf-8"
+X-SONOS-TARGET-UDN: uuid:{uuid}
+SOAPACTION: "urn:schemas-upnp-org:service:AVTransport:1#Play"
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:Play xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"><InstanceID>0</InstanceID><Speed>1</Speed></u:Play></s:Body></s:Envelope>

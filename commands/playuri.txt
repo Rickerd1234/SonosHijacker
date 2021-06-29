@@ -1,0 +1,13 @@
+POST /MediaRenderer/AVTransport/Control HTTP/1.1
+CONNECTION: close
+ACCEPT-ENCODING: gzip
+HOST: {ip}:1400
+USER-AGENT: Linux UPnP/1.0 Sonos/62.1-86220 (WDCR:Microsoft Windows NT 10.0.19042)
+X-Sonos-Api-Key: ffffffff-ffff-ffff-ffff-ffffffffffff
+X-Sonos-Corr-Id: ffffffff-ffff-ffff-ffff-ffffffffffff
+CONTENT-LENGTH: {cl}
+CONTENT-TYPE: text/xml; charset="utf-8"
+X-SONOS-TARGET-UDN: uuid:{uuid}
+SOAPACTION: "urn:schemas-upnp-org:service:AVTransport:1#SetAVTransportURI"
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:SetAVTransportURI xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"><InstanceID>0</InstanceID><CurrentURI>x-sonosapi-stream:{uri}?sid=254&amp;flags=8224&amp;sn=0</CurrentURI><CurrentURIMetaData>&lt;DIDL-Lite xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot; xmlns:upnp=&quot;urn:schemas-upnp-org:metadata-1-0/upnp/&quot; xmlns:r=&quot;urn:schemas-rinconnetworks-com:metadata-1-0/&quot; xmlns=&quot;urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/&quot;&gt;&lt;item id=&quot;F10092020s252020&quot; parentID=&quot;L&quot; restricted=&quot;true&quot;&gt;&lt;dc:title&gt;538 Non Stop (Top 40 &amp;amp; Pop Music)&lt;/dc:title&gt;&lt;upnp:class&gt;object.item.audioItem.audioBroadcast&lt;/upnp:class&gt;&lt;upnp:albumArtURI&gt;http://cdn-profiles.tunein.com/s252020/images/logoq.png&lt;/upnp:albumArtURI&gt;&lt;r:description&gt;Local Radio (Eindhoven)&lt;/r:description&gt;&lt;desc id=&quot;cdudn&quot; nameSpace=&quot;urn:schemas-rinconnetworks-com:metadata-1-0/&quot;&gt;SA_RINCON65031_&lt;/desc&gt;&lt;/item&gt;&lt;/DIDL-Lite&gt;</CurrentURIMetaData></u:SetAVTransportURI></s:Body></s:Envelope>

@@ -1,0 +1,13 @@
+POST /MediaRenderer/Queue/Control HTTP/1.1
+CONNECTION: close
+ACCEPT-ENCODING: gzip
+HOST: {ip}:1400
+USER-AGENT: Linux UPnP/1.0 Sonos/62.1-86220 (WDCR:Microsoft Windows NT 10.0.19042)
+X-Sonos-Api-Key: ffffffff-ffff-ffff-ffff-ffffffffffff
+X-Sonos-Corr-Id: ffffffff-ffff-ffff-ffff-ffffffffffff
+CONTENT-LENGTH: 283
+CONTENT-TYPE: text/xml; charset="utf-8"
+X-SONOS-TARGET-UDN: uuid:{uuid}
+SOAPACTION: "urn:schemas-sonos-com:service:Queue:1#RemoveAllTracks"
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:RemoveAllTracks xmlns:u="urn:schemas-sonos-com:service:Queue:1"><QueueID>0</QueueID><UpdateID>0</UpdateID></u:RemoveAllTracks></s:Body></s:Envelope>

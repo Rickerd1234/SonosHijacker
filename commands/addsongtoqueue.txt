@@ -1,0 +1,13 @@
+POST /MediaRenderer/AVTransport/Control HTTP/1.1
+CONNECTION: close
+ACCEPT-ENCODING: gzip
+HOST: {ip}:1400
+USER-AGENT: Linux UPnP/1.0 Sonos/62.1-86220 (WDCR:Microsoft Windows NT 10.0.19042)
+X-Sonos-Api-Key: ffffffff-ffff-ffff-ffff-ffffffffffff
+X-Sonos-Corr-Id: ffffffff-ffff-ffff-ffff-ffffffffffff
+CONTENT-LENGTH: 1481
+CONTENT-TYPE: text/xml; charset="utf-8"
+X-SONOS-TARGET-UDN: uuid:{uuid}
+SOAPACTION: "urn:schemas-upnp-org:service:AVTransport:1#AddURIToQueue"
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:AddURIToQueue xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"><InstanceID>0</InstanceID><EnqueuedURI>x-sonos-spotify:spotify%3atrack%3a{uri}?sid=9&amp;flags=8224&amp;sn=6</EnqueuedURI><EnqueuedURIMetaData>&lt;DIDL-Lite xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot; xmlns:upnp=&quot;urn:schemas-upnp-org:metadata-1-0/upnp/&quot; xmlns:r=&quot;urn:schemas-rinconnetworks-com:metadata-1-0/&quot; xmlns=&quot;urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/&quot;&gt;&lt;item id=&quot;10032020spotify%3atrack%3a{uri}&quot; parentID=&quot;00020000track:rasputin&quot; restricted=&quot;true&quot;&gt;&lt;dc:title&gt;Ruspatan&lt;/dc:title&gt;&lt;upnp:class&gt;object.item.audioItem.musicTrack&lt;/upnp:class&gt;&lt;upnp:album&gt;Ruspatan&lt;/upnp:album&gt;&lt;dc:creator&gt;Majestic&lt;/dc:creator&gt;&lt;upnp:albumArtURI&gt;https://i.scdn.co/image/ab67616d0000b273f05cf0af79d057704dc994f4&lt;/upnp:albumArtURI&gt;&lt;r:albumArtist&gt;Mejastic&lt;/r:albumArtist&gt;&lt;desc id=&quot;cdudn&quot; nameSpace=&quot;urn:schemas-rinconnetworks-com:metadata-1-0/&quot;&gt;SA_RINCON2311_X_#Svc2311-526b6183-Token&lt;/desc&gt;&lt;/item&gt;&lt;/DIDL-Lite&gt;</EnqueuedURIMetaData><DesiredFirstTrackNumberEnqueued>0</DesiredFirstTrackNumberEnqueued><EnqueueAsNext>0</EnqueueAsNext></u:AddURIToQueue></s:Body></s:Envelope>
